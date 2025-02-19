@@ -1,0 +1,19 @@
+nav ul {
+    /* ... other styles */
+    transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+nav ul.active {
+    /* ... other styles */
+    transform: translateY(0); /* Menu slides down from the top */
+}
+
+nav ul {
+    transform: translateY(-100%); /* Initially hidden off-screen */
+}
+
+@media (min-width: 769px) { /* Example breakpoint */
+    nav ul {
+        transform: translateY(0);  /* Show on larger screens */
+    }
+}
